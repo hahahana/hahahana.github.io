@@ -1,0 +1,142 @@
+@page {
+  margin:0px auto;
+}
+
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}
+
+body {
+  font-weight: 200;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-animation: fadein 2s;
+     -moz-animation: fadein 2s;
+      -ms-animation: fadein 2s;
+       -o-animation: fadein 2s;
+          animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity:0; }
+  to { opacity:1; }
+}
+
+@-moz-keyframes fadein {
+  from { opacity:0; }
+  to { opacity:1; }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity:0; }
+  to { opacity:1; }
+}
+
+@-o-keyframes fadein {
+  from { opacity:0; }
+  to { opacity:1; }
+}
+
+/* Header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0 0 15px 0;
+  margin: 0px;
+}
+
+.header h1 {
+  font-size: 23px;
+  font-weight: 200;
+  margin: 0px;
+  padding: 10px 0;
+}
+
+.header img {
+  margin: 5px 10px;
+  width: 120px;
+  height: 120px;
+}
+
+.img-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.col-custom {
+  color: #777;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+/* Content */
+#mission, #education, #work, #volunteer {
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0px;
+  padding: 20px 0;
+}
+
+#work .city {
+  text-align: right;
+}
+
+#piper ul {
+  border-bottom: 1px dashed #e5e5e5;
+  padding-bottom: 20px;
+}
+
+#molecule {
+  padding-top: 10px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px 15px 0 15px;
+}
+
+.footer a {
+  color: #777;
+}
+
+/* Misc Styles */
+a.glow {
+  color: #777;
+  -webkit-transition: color 0.5s ease-out;
+     -moz-transition: color 0.5s ease-out;
+       -o-transition: color 0.5s ease-out;
+}
+
+a.glow:hover {
+  color: #bee170;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+  
+
+@media screen and (min-width: 480px) {
+  .img-wrapper {
+    width: 450px;
+  }
+
+  .col-custom {
+    width: 50%;
+  }
+
+  .header h1 {
+    padding: 5px 0 13px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .img-wrapper {
+    width: 556px;
+  }
+}
