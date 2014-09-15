@@ -102,6 +102,10 @@ body {
   display: none;
 }
 
+.printable:hover .visible-msg {
+  display: none;
+}
+
 .printable:hover .hidden-msg {
   display: inline-block;
 }
@@ -156,7 +160,7 @@ a:hover, .printable:hover {
     color: #000 !important;
   }
 
-  .header a[href]:after {
+  a[href]:after{
     content: none !important;
   }
 
@@ -174,5 +178,9 @@ a:hover, .printable:hover {
 
   .printable {
     display: none;
+  }
+
+  a.print-show:after {
+    content: " (" attr(href) ")" !important;
   }
 }
