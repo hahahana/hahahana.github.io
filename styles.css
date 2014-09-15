@@ -46,6 +46,7 @@ body {
   margin: 5px 10px;
   width: 120px;
   height: 120px;
+  border-radius: 2px;
 }
 
 .img-wrapper {
@@ -67,6 +68,10 @@ body {
   padding: 20px 0;
 }
 
+#references {
+  padding-bottom: 30px;
+}
+
 #work .city {
   text-align: right;
 }
@@ -80,7 +85,6 @@ body {
   padding-top: 10px;
 }
 
-/* Footer */
 .footer {
   padding: 20px 15px 0 15px;
 }
@@ -89,16 +93,26 @@ body {
   color: #777;
 }
 
-/* Misc Styles */
-a.glow {
-  color: #777;
-  -webkit-transition: color 0.5s ease-out;
-     -moz-transition: color 0.5s ease-out;
-       -o-transition: color 0.5s ease-out;
+.printable {
+  cursor: pointer;
+  text-align: right;
 }
 
-a.glow:hover {
-  color: #bee170;
+.hidden-msg {
+  display: none;
+}
+
+.printable:hover .hidden-msg {
+  display: inline-block;
+}
+
+a, .printable {
+  cursor: pointer;
+  color: #777;
+}
+
+a:hover, .printable:hover {
+  color: #000;
   text-decoration: none;
 }
 
@@ -128,6 +142,7 @@ a.glow:hover {
   }
 }
 
+/* Hide header and footer in Chrome print view */
 @page {
   margin:0px auto;
 }
@@ -135,10 +150,6 @@ a.glow:hover {
 @media print {
   body {
     padding-top: 40px;
-  }
-
-  .img-wrapper {
-    width: 506px;
   }
 
   a {
@@ -149,7 +160,19 @@ a.glow:hover {
     content: none !important;
   }
 
+  .img-wrapper {
+    width: 506px;
+  }
+
   #mission, #education, #work, #volunteer, #references {
     padding: 13px 0;
+  }
+
+  #references {
+    padding-bottom: 20px;
+  }
+
+  .printable {
+    display: none;
   }
 }
