@@ -62,23 +62,18 @@ body {
   padding-bottom: 5px;
 }
 
+ul li {
+  margin-bottom: 2px;
+}
+
 #mission, #education, #work, #volunteer, #references {
   border-bottom: 1px solid #e5e5e5;
   margin: 0px;
   padding: 20px 0;
 }
 
-#references {
+#references, #education {
   padding-bottom: 30px;
-}
-
-#work .city {
-  text-align: right;
-}
-
-#piper ul {
-  border-bottom: 1px dashed #e5e5e5;
-  padding-bottom: 20px;
 }
 
 #molecule {
@@ -120,9 +115,19 @@ a:hover, .printable:hover {
   text-decoration: none;
 }
 
+a.underline {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  #education #degree, #work .city {
+    text-align: right;
+  }
+}
+
 @media (min-width: 768px), print {
   .container {
-    max-width: 730px;
+    max-width: 760px;
   }
 }
 
@@ -148,7 +153,7 @@ a:hover, .printable:hover {
 
 /* Hide header and footer in Chrome print view */
 @page {
-  margin:0px auto;
+  margin: 0px auto;
 }
 
 @media print {
@@ -164,6 +169,14 @@ a:hover, .printable:hover {
     content: none !important;
   }
 
+  a.underline {
+    text-decoration: none;
+  }
+
+  .printable {
+    display: none;
+  }
+
   .img-wrapper {
     width: 506px;
   }
@@ -172,12 +185,19 @@ a:hover, .printable:hover {
     padding: 13px 0;
   }
 
-  #references {
+  #references, #education {
     padding-bottom: 20px;
   }
 
-  .printable {
-    display: none;
+  #education #school {
+    width: 40%;
+    float: left;
+  }
+
+  #education #degree {
+    width: 60%;
+    float: left;
+    text-align: right;
   }
 
   a.print-show:after {
