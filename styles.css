@@ -66,22 +66,26 @@ ul li {
   margin-bottom: 2px;
 }
 
+h4 {
+  margin-top: 15px;
+}
+
 #mission, #education, #work, #volunteer, #references {
   border-bottom: 1px solid #e5e5e5;
   margin: 0px;
-  padding: 20px 0;
+  padding: 0px 0;
 }
 
-#references, #education {
-  padding-bottom: 30px;
+#education {
+  padding: 0px 0 15px;
 }
 
-#molecule {
-  padding-top: 10px;
+ul {
+  margin-bottom: 15px;
 }
 
 .footer {
-  padding: 20px 15px 0 15px;
+  padding: 15px;
 }
 
 .footer a {
@@ -158,7 +162,7 @@ a.underline {
 
 @media print {
   body {
-    padding-top: 40px;
+    padding-top: 35px;
   }
 
   a {
@@ -181,12 +185,9 @@ a.underline {
     width: 506px;
   }
 
-  #mission, #education, #work, #volunteer, #references {
-    padding: 13px 0;
-  }
-
-  #references, #education {
-    padding-bottom: 20px;
+  .footer {
+    padding-top: 25px;
+    padding-bottom: 0;
   }
 
   #education #school {
