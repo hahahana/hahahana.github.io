@@ -1,4 +1,5 @@
 body {
+  font-family: -apple-system, system-ui;
   font-weight: 200;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -186,8 +187,7 @@ a.underline {
   }
 
   .footer {
-    padding-top: 25px;
-    padding-bottom: 0;
+    display: none;
   }
 
   #education #school {
@@ -199,6 +199,10 @@ a.underline {
     width: 60%;
     float: left;
     text-align: right;
+  }
+
+  #volunteer {
+    border-bottom: 0px;
   }
 
   a.print-show:after {
